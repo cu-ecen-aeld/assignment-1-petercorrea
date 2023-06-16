@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "Pedros-MBP",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet",
+  "gitHubUrl": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea",
+  "workFolder": "_work"
+}
