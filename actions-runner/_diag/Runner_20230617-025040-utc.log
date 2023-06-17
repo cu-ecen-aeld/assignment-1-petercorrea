@@ -1,0 +1,126 @@
+[2023-06-17 02:50:40Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-06-17 02:50:40Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:40Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:40Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-17 02:50:41Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-06-17 02:50:41Z INFO Listener] RuntimeInformation: Linux 5.15.49-linuxkit #1 SMP PREEMPT Tue Sep 13 07:51:32 UTC 2022.
+[2023-06-17 02:50:41Z INFO Listener] Version: 2.305.0
+[2023-06-17 02:50:41Z INFO Listener] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-06-17 02:50:41Z INFO Listener] Culture: 
+[2023-06-17 02:50:41Z INFO Listener] UI Culture: 
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO Listener] Validating directory permissions for: '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO CommandLineParser] Parse
+[2023-06-17 02:50:41Z INFO CommandLineParser] Parsing 1 args
+[2023-06-17 02:50:41Z INFO CommandLineParser] parsing argument
+[2023-06-17 02:50:41Z INFO CommandLineParser] HasArgs: False
+[2023-06-17 02:50:41Z INFO CommandLineParser] Adding Command: run
+[2023-06-17 02:50:41Z INFO Listener] Arguments parsed
+[2023-06-17 02:50:41Z INFO Runner] ExecuteCommand
+[2023-06-17 02:50:41Z INFO ConfigurationStore] currentAssemblyLocation: /usr/src/app/actions-runner/bin/Runner.Listener.dll
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] binPath: /usr/src/app/actions-runner/bin
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] RootFolder: /usr/src/app/actions-runner
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] ConfigFilePath: /usr/src/app/actions-runner/.runner
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] CredFilePath: /usr/src/app/actions-runner/.credentials
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO HostContext] Well known config file 'MigratedCredentials': '/usr/src/app/actions-runner/.credentials_migrated'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] MigratedCredFilePath: /usr/src/app/actions-runner/.credentials_migrated
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO HostContext] Well known config file 'Service': '/usr/src/app/actions-runner/.service'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] ServiceConfigFilePath: /usr/src/app/actions-runner/.service
+[2023-06-17 02:50:41Z INFO CommandSettings] Flag 'help': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Flag 'version': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Flag 'check': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Command 'configure': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Command 'remove': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-06-17 02:50:41Z INFO ConfigurationManager] LoadSettings
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsConfigured()
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-17 02:50:41Z INFO ConfigurationManager] Is configured: True
+[2023-06-17 02:50:41Z INFO ConfigurationStore] Read setting file: 307 chars
+[2023-06-17 02:50:41Z INFO ConfigurationManager] Settings Loaded
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-06-17 02:50:41Z INFO CommandSettings] Command 'run': 'True'
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsConfigured()
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-17 02:50:41Z INFO ConfigurationManager] Is configured: True
+[2023-06-17 02:50:41Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-06-17 02:50:41Z INFO Runner] Set runner startup type - Manual
+[2023-06-17 02:50:41Z INFO CommandSettings] Flag 'once': 'False'
+[2023-06-17 02:50:41Z INFO CommandSettings] Flag 'once': 'False'
+[2023-06-17 02:50:41Z INFO Runner] RunAsync
+[2023-06-17 02:50:41Z INFO ConfigurationManager] LoadSettings
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsConfigured()
+[2023-06-17 02:50:41Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-17 02:50:41Z INFO ConfigurationManager] Is configured: True
+[2023-06-17 02:50:41Z INFO ConfigurationManager] Settings Loaded
+[2023-06-17 02:50:41Z INFO MessageListener] {
+  "AgentId": 24,
+  "AgentName": "5398ccb646be",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea",
+  "WorkFolder": "_work"
+}
+[2023-06-17 02:50:41Z INFO MessageListener] Loading Credentials
+[2023-06-17 02:50:41Z INFO ConfigurationStore] HasCredentials()
+[2023-06-17 02:50:41Z INFO ConfigurationStore] stored True
+[2023-06-17 02:50:41Z INFO CredentialManager] GetCredentialProvider
+[2023-06-17 02:50:41Z INFO CredentialManager] Creating type OAuth
+[2023-06-17 02:50:41Z INFO CredentialManager] Creating credential type: OAuth
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 02:50:41Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 02:50:41Z INFO HostContext] Well known config file 'RSACredentials': '/usr/src/app/actions-runner/.credentials_rsaparams'
+[2023-06-17 02:50:41Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 02:50:42Z INFO MessageListener] Attempt to create session.
+[2023-06-17 02:50:42Z INFO MessageListener] Connecting to the Runner Server...
+[2023-06-17 02:50:42Z INFO RunnerServer] EstablishVssConnection
+[2023-06-17 02:50:42Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-06-17 02:50:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 02:50:42Z INFO RunnerServer] EstablishVssConnection
+[2023-06-17 02:50:42Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-17 02:50:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 02:50:42Z INFO RunnerServer] EstablishVssConnection
+[2023-06-17 02:50:42Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-17 02:50:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 02:50:43Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 02:50:43Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 02:50:43Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 02:50:44Z INFO MessageListener] VssConnection created
+[2023-06-17 02:50:44Z INFO Terminal] WRITE LINE: 
+[2023-06-17 02:50:44Z INFO Terminal] WRITE LINE: 
+[2023-06-17 02:50:45Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 02:50:45Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 02:50:45Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-06-17 02:50:45Z ERR  GitHubActionsService] POST request to https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet/_apis/distributedtask/pools/1/sessions failed. HTTP Status: Conflict, AFD Ref: Ref A: 77B905E9A1934D7B8490965D8E100E30 Ref B: MIA301000102049 Ref C: 2023-06-17T02:50:45Z
+[2023-06-17 02:50:45Z ERR  MessageListener] Catch exception during create session.
+[2023-06-17 02:50:45Z ERR  MessageListener] GitHub.DistributedTask.WebApi.TaskAgentSessionConflictException: The actions runner 5398ccb646be already has an active session for owner 8025463c5af6.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.CreateSessionAsync(CancellationToken token)
+[2023-06-17 02:50:45Z INFO MessageListener] The session for this runner already exists.
+[2023-06-17 02:50:45Z ERR  Terminal] WRITE ERROR: A session for this runner already exists.
+[2023-06-17 02:50:45Z INFO MessageListener] The session conflict exception haven't reached retry limit.
+[2023-06-17 02:50:45Z ERR  Terminal] WRITE ERROR: 2023-06-17 02:50:45Z: Runner connect error: The actions runner 5398ccb646be already has an active session for owner 8025463c5af6.. Retrying until reconnected.
+[2023-06-17 02:50:45Z INFO MessageListener] Sleeping for 30 seconds before retrying.

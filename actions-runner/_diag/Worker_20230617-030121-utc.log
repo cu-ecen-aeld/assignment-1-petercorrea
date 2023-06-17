@@ -1,0 +1,3001 @@
+[2023-06-17 03:01:22Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-06-17 03:01:22Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:22Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:22Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 03:01:22Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:22Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:22Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-17 03:01:22Z INFO Worker] Version: 2.305.0
+[2023-06-17 03:01:22Z INFO Worker] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-06-17 03:01:22Z INFO Worker] Culture: en-US
+[2023-06-17 03:01:22Z INFO Worker] UI Culture: en-US
+[2023-06-17 03:01:22Z INFO Worker] Waiting to receive the job message from the channel.
+[2023-06-17 03:01:23Z INFO ProcessChannel] Receiving message of length 23036, with hash 'c8d346ea8c0100120b5761e0efd161fd32b21314993d10d172de3f09af101272'
+[2023-06-17 03:01:23Z INFO Worker] Message received.
+[2023-06-17 03:01:24Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/github-actions.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "5ae3cfb7-d7d4-55cf-e765-f7829c54f157",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 23,
+        "col": 19,
+        "lit": "Checkout submodules"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 24,
+              "col": 19,
+              "lit": "git submodule update --init --recursive"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "0358dd64-d4c6-52fe-1d1f-54fa3c1bbc5e",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 25,
+        "col": 19,
+        "lit": "Run full test"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 26,
+              "col": 18,
+              "lit": "./full-test.sh"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "65a7d644-3062-544f-df76-4b95bcf50146",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2023-06-17 03:01:06+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "21"
+    },
+    "build.containerId": {
+      "value": "2322414"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/github-actions.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "full-test"
+    },
+    "system.phaseId": {
+      "value": "ab5579c2-8327-5dba-a8ef-b554bdd0f462"
+    },
+    "system.phaseName": {
+      "value": "full-test"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "full-test.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "full-test"
+    },
+    "system.jobDisplayName": {
+      "value": "full-test"
+    },
+    "system.jobId": {
+      "value": "a047640a-23da-5e9b-1ef8-917a09b3753a"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.orchestrationId": {
+      "value": "3148bb2e-9133-41c7-8a2f-9f85129d7cfd.full-test.__default"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 31,
+    "planId": "3148bb2e-9133-41c7-8a2f-9f85129d7cfd",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/21",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "assignment-1-petercorrea"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "cu-ecen-aeld"
+    }
+  },
+  "timeline": {
+    "id": "3148bb2e-9133-41c7-8a2f-9f85129d7cfd",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "a047640a-23da-5e9b-1ef8-917a09b3753a",
+  "jobDisplayName": "full-test",
+  "jobName": "__default",
+  "jobContainer": {
+    "type": 0,
+    "file": 1,
+    "line": 19,
+    "col": 20,
+    "lit": "cuaesd/aesd-autotest:assignment1"
+  },
+  "requestId": 39,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "74cab714-1d38-459a-b59d-53fa6d3f0e17",
+          "ServerName": "6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/3148bb2e-9133-41c7-8a2f-9f85129d7cfd/timelines/3148bb2e-9133-41c7-8a2f-9f85129d7cfd/records/a047640a-23da-5e9b-1ef8-917a09b3753a/feedstream?api-version=6.0-preview"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "3e4bc5ea615066ba3e431a11e5c854b57626d243"
+        },
+        {
+          "k": "repository",
+          "v": "cu-ecen-aeld/assignment-1-petercorrea"
+        },
+        {
+          "k": "repository_owner",
+          "v": "cu-ecen-aeld"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "49594950"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/cu-ecen-aeld/assignment-1-petercorrea.git"
+        },
+        {
+          "k": "run_id",
+          "v": "5294059808"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "20"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "repository_id",
+          "v": "654230419"
+        },
+        {
+          "k": "actor_id",
+          "v": "32339993"
+        },
+        {
+          "k": "actor",
+          "v": "petercorrea"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "petercorrea"
+        },
+        {
+          "k": "workflow",
+          "v": "assignment-test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "3e4bc5ea615066ba3e431a11e5c854b57626d243"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "433d2cd1f138abacbb3929e2d56cd94b3ce4c43e"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "peter@Pedros-MBP.home"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Pedro Correa"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "peter@Pedros-MBP.home"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Pedro Correa"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "3e4bc5ea615066ba3e431a11e5c854b57626d243"
+                        },
+                        {
+                          "k": "message",
+                          "v": "minor edits"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2023-06-16T16:44:59-04:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "edd553f726a0b6af97b43797c641426e30fb8f8b"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea/commit/3e4bc5ea615066ba3e431a11e5c854b57626d243"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea/compare/433d2cd1f138...3e4bc5ea6150"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "peter@Pedros-MBP.home"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Pedro Correa"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "peter@Pedros-MBP.home"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Pedro Correa"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "3e4bc5ea615066ba3e431a11e5c854b57626d243"
+                    },
+                    {
+                      "k": "message",
+                      "v": "minor edits"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2023-06-16T16:44:59-04:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "edd553f726a0b6af97b43797c641426e30fb8f8b"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea/commit/3e4bc5ea615066ba3e431a11e5c854b57626d243"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "organization",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Course Github Organization for University of Colorado at Boulder ECEN 5713 Advanced Embedded Software Development (previously 5013-002)"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/events"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/hooks"
+                    },
+                    {
+                      "k": "id",
+                      "v": 49594950.0
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/issues"
+                    },
+                    {
+                      "k": "login",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/members{/member}"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                    },
+                    {
+                      "k": "public_members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/public_members{/member}"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/repos"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "pmcorrea@me.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "petercorrea"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1686848363.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "assignment-1-petercorrea created by GitHub Classroom"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "cu-ecen-aeld/assignment-1-petercorrea"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/cu-ecen-aeld/assignment-1-petercorrea.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea"
+                    },
+                    {
+                      "k": "id",
+                      "v": 654230419.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "assignment-1-petercorrea"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOJv7Dkw"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "organization",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": null
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/cu-ecen-aeld"
+                          },
+                          {
+                            "k": "id",
+                            "v": 49594950.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "name",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "Organization"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1686948303.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 157128.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:cu-ecen-aeld/assignment-1-petercorrea.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-1-petercorrea/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2023-06-16T03:22:51Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/32339993?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/petercorrea/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/petercorrea/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/petercorrea/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/petercorrea/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/petercorrea"
+                    },
+                    {
+                      "k": "id",
+                      "v": 32339993.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "petercorrea"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjMyMzM5OTkz"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/petercorrea/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/petercorrea/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/petercorrea/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/petercorrea/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/petercorrea/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/petercorrea"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "cu-ecen-aeld/assignment-1-petercorrea/.github/workflows/github-actions.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "3e4bc5ea615066ba3e431a11e5c854b57626d243"
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2023-06-17 03:01:24Z INFO JobRunner] Job ID a047640a-23da-5e9b-1ef8-917a09b3753a
+[2023-06-17 03:01:24Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet/
+[2023-06-17 03:01:24Z INFO ConfigurationStore] currentAssemblyLocation: /usr/src/app/actions-runner/bin/Runner.Worker.dll
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:24Z INFO ConfigurationStore] binPath: /usr/src/app/actions-runner/bin
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:24Z INFO ConfigurationStore] RootFolder: /usr/src/app/actions-runner
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:24Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-17 03:01:24Z INFO ConfigurationStore] ConfigFilePath: /usr/src/app/actions-runner/.runner
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:24Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 03:01:24Z INFO ConfigurationStore] CredFilePath: /usr/src/app/actions-runner/.credentials
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:24Z INFO HostContext] Well known config file 'MigratedCredentials': '/usr/src/app/actions-runner/.credentials_migrated'
+[2023-06-17 03:01:24Z INFO ConfigurationStore] MigratedCredFilePath: /usr/src/app/actions-runner/.credentials_migrated
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:24Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:24Z INFO HostContext] Well known config file 'Service': '/usr/src/app/actions-runner/.service'
+[2023-06-17 03:01:24Z INFO ConfigurationStore] ServiceConfigFilePath: /usr/src/app/actions-runner/.service
+[2023-06-17 03:01:24Z INFO ConfigurationStore] Read setting file: 307 chars
+[2023-06-17 03:01:24Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 03:01:24Z INFO Worker] Listening for cancel message from the channel.
+[2023-06-17 03:01:24Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2023-06-17 03:01:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 03:01:25Z INFO JobServer] Creating websocket client ...wss://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/3148bb2e-9133-41c7-8a2f-9f85129d7cfd/timelines/3148bb2e-9133-41c7-8a2f-9f85129d7cfd/records/a047640a-23da-5e9b-1ef8-917a09b3753a/feedstream?api-version=6.0-preview
+[2023-06-17 03:01:25Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2023-06-17 03:01:25Z INFO JobServerQueue] Start process web console line queue.
+[2023-06-17 03:01:25Z INFO JobServerQueue] Start process file upload queue.
+[2023-06-17 03:01:25Z INFO JobServerQueue] Start results file upload queue.
+[2023-06-17 03:01:25Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-06-17 03:01:25Z INFO JobServerQueue] Start process timeline update queue.
+[2023-06-17 03:01:25Z INFO ExecutionContext] Initialize GitHub context
+[2023-06-17 03:01:26Z INFO ExecutionContext] Initialize Env context
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:26Z INFO JobRunner] Starting the job execution context.
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO JobRunner] Validating directory permissions for: '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Tools': '/usr/src/app/actions-runner/_work/_tool'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:26Z INFO JobRunner] Getting job extension.
+[2023-06-17 03:01:26Z INFO JobRunner] Initialize job. Getting all job steps.
+[2023-06-17 03:01:26Z INFO JobServer] Successfully started websocket client.
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known config file 'SetupInfo': '/usr/src/app/actions-runner/.setup_info'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO PipelineDirectoryManager] Loading tracking config if exists: /usr/src/app/actions-runner/_work/_PipelineMapping/cu-ecen-aeld/assignment-1-petercorrea/PipelineFolder.json
+[2023-06-17 03:01:26Z INFO PipelineDirectoryManager] Updating job run properties.
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1b25eb54-6dcf-4fd8-9e89-46c1f01f8d46', success rate: 1/1.
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Tools': '/usr/src/app/actions-runner/_work/_tool'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Externals': '/usr/src/app/actions-runner/externals'
+[2023-06-17 03:01:26Z INFO JobExtension] Downloading actions
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:26Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:26Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2023-06-17 03:01:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1b25eb54-6dcf-4fd8-9e89-46c1f01f8d46', success rate: 1/1.
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:27Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:27Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/ee0669bd1cc54295c223e0bb666b733df41de1c5' into /usr/src/app/actions-runner/_work/_actions/_temp_e82e5946-42ac-40a7-a7aa-d3dfeb00dd8e/54df0b86-dc92-451f-acbb-171a29527bc8.tar.gz.
+[2023-06-17 03:01:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1b25eb54-6dcf-4fd8-9e89-46c1f01f8d46', success rate: 1/1.
+[2023-06-17 03:01:28Z INFO ActionManager] Which: 'tar'
+[2023-06-17 03:01:28Z INFO ActionManager] Location: '/usr/bin/tar'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/usr/src/app/actions-runner/_work/_actions/_temp_e82e5946-42ac-40a7-a7aa-d3dfeb00dd8e/54df0b86-dc92-451f-acbb-171a29527bc8.tar.gz"'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/_actions/_temp_e82e5946-42ac-40a7-a7aa-d3dfeb00dd8e/_staging'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 533.
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper] Process started with process id 533, waiting for process exit.
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:28Z INFO ProcessInvokerWrapper] Finished process 533 with exit code 0, and elapsed time 00:00:00.5058066.
+[2023-06-17 03:01:29Z INFO ActionManager] Finished getting action repository.
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:29Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:29Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-06-17 03:01:29Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:29Z INFO ActionManager] Load action that reference repository from '/usr/src/app/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:29Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-06-17 03:01:29Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-06-17 03:01:29Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-06-17 03:01:29Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-06-17 03:01:29Z INFO DockerCommandManager] Which: 'docker'
+[2023-06-17 03:01:29Z INFO DockerCommandManager] Location: '/usr/bin/docker'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO JobExtension] Adding .
+[2023-06-17 03:01:29Z INFO JobExtension] Adding .
+[2023-06-17 03:01:29Z INFO JobExtension] Adding .
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1b25eb54-6dcf-4fd8-9e89-46c1f01f8d46', success rate: 1/1.
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:29Z INFO JobExtension] Total accessible running process: 9.
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:29Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:29Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "1b25eb54-6dcf-4fd8-9e89-46c1f01f8d46",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2023-06-17T03:01:26.205985Z",
+  "finishTime": "2023-06-17T03:01:29.7621794Z"
+}.
+[2023-06-17 03:01:29Z INFO JobRunner] Total job steps: 4.
+[2023-06-17 03:01:29Z INFO JobRunner] Run all job steps.
+[2023-06-17 03:01:29Z INFO StepsRunner] Processing step: DisplayName='Initialize containers'
+[2023-06-17 03:01:30Z INFO StepsRunner] Evaluating: success()
+[2023-06-17 03:01:30Z INFO StepsRunner] Result: true
+[2023-06-17 03:01:30Z INFO StepsRunner] Starting the step.
+[2023-06-17 03:01:30Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2023-06-17 03:01:30Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:30Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:30Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:30Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:30Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:30Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Server.APIVersion}}''
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 541.
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Process started with process id 541, waiting for process exit.
+[2023-06-17 03:01:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:30Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Finished process 541 with exit code 0, and elapsed time 00:00:00.2536078.
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Client.APIVersion}}''
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 553.
+[2023-06-17 03:01:30Z INFO ProcessInvokerWrapper] Process started with process id 553, waiting for process exit.
+[2023-06-17 03:01:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Finished process 553 with exit code 0, and elapsed time 00:00:00.2383745.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --quiet --no-trunc --filter "label=6a2b2d"'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 565.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Process started with process id 565, waiting for process exit.
+[2023-06-17 03:01:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Finished process 565 with exit code 0, and elapsed time 00:00:00.2187500.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Arguments: 'network prune --force --filter "label=6a2b2d"'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 577.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Process started with process id 577, waiting for process exit.
+[2023-06-17 03:01:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Finished process 577 with exit code 0, and elapsed time 00:00:00.2145120.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Arguments: 'network create --label 6a2b2d github_network_5f0e7175a6e54b59b35fe26dd97f7a37'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 589.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Process started with process id 589, waiting for process exit.
+[2023-06-17 03:01:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Finished process 589 with exit code 0, and elapsed time 00:00:00.2499891.
+[2023-06-17 03:01:31Z INFO ContainerOperationProvider] Container name: 074d4df2adad4b999b7cf930595bc817
+[2023-06-17 03:01:31Z INFO ContainerOperationProvider] Container image: cuaesd/aesd-autotest:assignment1
+[2023-06-17 03:01:31Z INFO ContainerOperationProvider] Container options: 
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Arguments: 'pull cuaesd/aesd-autotest:assignment1'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 601.
+[2023-06-17 03:01:31Z INFO ProcessInvokerWrapper] Process started with process id 601, waiting for process exit.
+[2023-06-17 03:01:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper] Finished process 601 with exit code 0, and elapsed time 00:00:00.7612302.
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Externals': '/usr/src/app/actions-runner/externals'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Externals': '/usr/src/app/actions-runner/externals'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Tools': '/usr/src/app/actions-runner/_work/_tool'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Tools': '/usr/src/app/actions-runner/_work/_tool'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:32Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Arguments: 'create --name 074d4df2adad4b999b7cf930595bc817_cuaesdaesdautotestassignment1_80c6ee --label 6a2b2d --workdir /__w/assignment-1-petercorrea/assignment-1-petercorrea --network github_network_5f0e7175a6e54b59b35fe26dd97f7a37  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/usr/src/app/actions-runner/_work":"/__w" -v "/usr/src/app/actions-runner/externals":"/__e":ro -v "/usr/src/app/actions-runner/_work/_temp":"/__w/_temp" -v "/usr/src/app/actions-runner/_work/_actions":"/__w/_actions" -v "/usr/src/app/actions-runner/_work/_tool":"/__w/_tool" -v "/usr/src/app/actions-runner/_work/_temp/_github_home":"/github/home" -v "/usr/src/app/actions-runner/_work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" cuaesd/aesd-autotest:assignment1 "-f" "/dev/null"'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 613.
+[2023-06-17 03:01:32Z INFO ProcessInvokerWrapper] Process started with process id 613, waiting for process exit.
+[2023-06-17 03:01:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Finished process 613 with exit code 0, and elapsed time 00:00:00.2434232.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Arguments: 'start 145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 625.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Process started with process id 625, waiting for process exit.
+[2023-06-17 03:01:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Finished process 625 with exit code 0, and elapsed time 00:00:00.4285235.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Arguments: 'ps --all --filter id=145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 637.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Process started with process id 637, waiting for process exit.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Finished process 637 with exit code 0, and elapsed time 00:00:00.2321175.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Arguments: 'inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77'
+[2023-06-17 03:01:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 649.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Process started with process id 649, waiting for process exit.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:33Z INFO ProcessInvokerWrapper] Finished process 649 with exit code 0, and elapsed time 00:00:00.2279549.
+[2023-06-17 03:01:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:34Z INFO StepsRunner] Step result: 
+[2023-06-17 03:01:34Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "initialize_containers",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "3e088249-bc82-4012-baad-7c4e2fe77133",
+  "stepContextName": "3e088249bc824012baad7c4e2fe77133",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 5,
+  "startTime": "2023-06-17T03:01:29.838721Z",
+  "finishTime": "2023-06-17T03:01:34.0264851Z"
+}.
+[2023-06-17 03:01:34Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-06-17 03:01:34Z INFO StepsRunner] Current state: job state = ''
+[2023-06-17 03:01:34Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2023-06-17 03:01:34Z INFO StepsRunner] Evaluating: success()
+[2023-06-17 03:01:34Z INFO StepsRunner] Result: true
+[2023-06-17 03:01:34Z INFO StepsRunner] Starting the step.
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:34Z INFO ActionManager] Load action that reference repository from '/usr/src/app/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-06-17 03:01:34Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-06-17 03:01:34Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-06-17 03:01:34Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:34Z INFO ExecutionContext] Write event payload to /usr/src/app/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:34Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "cu-ecen-aeld/assignment-1-petercorrea"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-06-17 03:01:34Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:34Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e088249-bc82-4012-baad-7c4e2fe77133', success rate: 1/1.
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command error
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command group
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-06-17 03:01:34Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Arguments: 'exec  145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77 sh -c "cat /etc/*release | grep ^ID"'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 661.
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Process started with process id 661, waiting for process exit.
+[2023-06-17 03:01:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5ae3cfb7-d7d4-55cf-e765-f7829c54f157', success rate: 1/1.
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Finished process 661 with exit code 0, and elapsed time 00:00:00.3043619.
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Externals': '/usr/src/app/actions-runner/externals'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:34Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-1-petercorrea/assignment-1-petercorrea -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" 145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77 /__e/node12/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 673.
+[2023-06-17 03:01:34Z INFO ProcessInvokerWrapper] Process started with process id 673, waiting for process exit.
+[2023-06-17 03:01:34Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Finished process 673 with exit code 126, and elapsed time 00:00:00.2892998.
+[2023-06-17 03:01:35Z INFO CreateStepSummaryCommand] Step Summary file (/usr/src/app/actions-runner/_work/_temp/_runner_file_commands/step_summary_efd7db73-ef72-460a-bf1b-55562c344cd8) is empty; skipping attachment upload
+[2023-06-17 03:01:35Z INFO StepsRunner] Step result: Failed
+[2023-06-17 03:01:35Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node12",
+  "stage": "Main",
+  "stepId": "5ae3cfb7-d7d4-55cf-e765-f7829c54f157",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "failed",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2023-06-17T03:01:34.0357702Z",
+  "finishTime": "2023-06-17T03:01:35.1258649Z"
+}.
+[2023-06-17 03:01:35Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2023-06-17 03:01:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-06-17 03:01:35Z INFO StepsRunner] Processing step: DisplayName='Checkout submodules'
+[2023-06-17 03:01:35Z INFO StepsRunner] Evaluating: success()
+[2023-06-17 03:01:35Z INFO StepsRunner] Result: false
+[2023-06-17 03:01:35Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2023-06-17 03:01:35Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2023-06-17 03:01:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-06-17 03:01:35Z INFO StepsRunner] Processing step: DisplayName='Run full test'
+[2023-06-17 03:01:35Z INFO StepsRunner] Evaluating: success()
+[2023-06-17 03:01:35Z INFO StepsRunner] Result: false
+[2023-06-17 03:01:35Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2023-06-17 03:01:35Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2023-06-17 03:01:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-06-17 03:01:35Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2023-06-17 03:01:35Z INFO StepsRunner] Evaluating: always()
+[2023-06-17 03:01:35Z INFO StepsRunner] Result: true
+[2023-06-17 03:01:35Z INFO StepsRunner] Starting the step.
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:35Z INFO ActionManager] Load action that reference repository from '/usr/src/app/actions-runner/_work/_actions/actions/checkout/v2'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Actions': '/usr/src/app/actions-runner/_work/_actions'
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-06-17 03:01:35Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-06-17 03:01:35Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-06-17 03:01:35Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:35Z INFO ExecutionContext] Write event payload to /usr/src/app/actions-runner/_work/_temp/_github_workflow/event.json
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Temp': '/usr/src/app/actions-runner/_work/_temp'
+[2023-06-17 03:01:35Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "cu-ecen-aeld/assignment-1-petercorrea"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-06-17 03:01:35Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-06-17 03:01:35Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command error
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command group
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-06-17 03:01:35Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Arguments: 'exec  145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77 sh -c "cat /etc/*release | grep ^ID"'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 685.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Process started with process id 685, waiting for process exit.
+[2023-06-17 03:01:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5ae3cfb7-d7d4-55cf-e765-f7829c54f157', success rate: 1/1.
+[2023-06-17 03:01:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '511c78c0-17be-451e-a464-22db18fce775', success rate: 1/1.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Finished process 685 with exit code 0, and elapsed time 00:00:00.2993501.
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Externals': '/usr/src/app/actions-runner/externals'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:35Z INFO HostContext] Well known directory 'Work': '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Arguments: 'exec -i --workdir /__w/assignment-1-petercorrea/assignment-1-petercorrea -e "INPUT_REPOSITORY" -e "INPUT_REF" -e "INPUT_TOKEN" -e "INPUT_SSH-KEY" -e "INPUT_SSH-KNOWN-HOSTS" -e "INPUT_SSH-STRICT" -e "INPUT_PERSIST-CREDENTIALS" -e "INPUT_PATH" -e "INPUT_CLEAN" -e "INPUT_FETCH-DEPTH" -e "INPUT_LFS" -e "INPUT_SUBMODULES" -e "INPUT_SET-SAFE-DIRECTORY" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" 145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77 /__e/node12/bin/node /__w/_actions/actions/checkout/v2/dist/index.js'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 697.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Process started with process id 697, waiting for process exit.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Finished process 697 with exit code 126, and elapsed time 00:00:00.2674399.
+[2023-06-17 03:01:35Z INFO CreateStepSummaryCommand] Step Summary file (/usr/src/app/actions-runner/_work/_temp/_runner_file_commands/step_summary_78ec0e64-0437-4a78-8927-5147c3b58bfe) is empty; skipping attachment upload
+[2023-06-17 03:01:35Z INFO StepsRunner] Step result: Failed
+[2023-06-17 03:01:35Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v2",
+  "type": "node12",
+  "stage": "Post",
+  "stepId": "511c78c0-17be-451e-a464-22db18fce775",
+  "result": "failed",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-06-17T03:01:35.1443217Z",
+  "finishTime": "2023-06-17T03:01:35.8256168Z"
+}.
+[2023-06-17 03:01:35Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2023-06-17 03:01:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-06-17 03:01:35Z INFO StepsRunner] Processing step: DisplayName='Stop containers'
+[2023-06-17 03:01:35Z INFO StepsRunner] Evaluating: always()
+[2023-06-17 03:01:35Z INFO StepsRunner] Result: true
+[2023-06-17 03:01:35Z INFO StepsRunner] Starting the step.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Arguments: 'rm --force 145afa8a530825cf8c77e0e6f771757cba79e6d05102fca0a959cd01836dfc77'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 709.
+[2023-06-17 03:01:35Z INFO ProcessInvokerWrapper] Process started with process id 709, waiting for process exit.
+[2023-06-17 03:01:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '511c78c0-17be-451e-a464-22db18fce775', success rate: 1/1.
+[2023-06-17 03:01:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3263e8a9-2e62-4a5c-8db8-f41295c5b450', success rate: 1/1.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] Finished process 709 with exit code 0, and elapsed time 00:00:00.3121664.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Arguments: 'network rm github_network_5f0e7175a6e54b59b35fe26dd97f7a37'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/_work/assignment-1-petercorrea/assignment-1-petercorrea'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 721.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] Process started with process id 721, waiting for process exit.
+[2023-06-17 03:01:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3263e8a9-2e62-4a5c-8db8-f41295c5b450', success rate: 1/1.
+[2023-06-17 03:01:36Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 03:01:36Z INFO ProcessInvokerWrapper] Finished process 721 with exit code 0, and elapsed time 00:00:00.2790825.
+[2023-06-17 03:01:36Z INFO StepsRunner] Step result: 
+[2023-06-17 03:01:36Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-06-17 03:01:36Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-06-17 03:01:36Z INFO JobRunner] Finalize job.
+[2023-06-17 03:01:36Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:36Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:36Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:36Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:36Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:36Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:36Z INFO JobExtension] Initialize Env context
+[2023-06-17 03:01:36Z INFO JobExtension] Initialize steps context
+[2023-06-17 03:01:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3263e8a9-2e62-4a5c-8db8-f41295c5b450', success rate: 1/1.
+[2023-06-17 03:01:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '17d61130-a55a-4695-a08d-234bb6135b6c', success rate: 1/1.
+[2023-06-17 03:01:36Z INFO JobExtension] Total accessible running process: 9.
+[2023-06-17 03:01:36Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "17d61130-a55a-4695-a08d-234bb6135b6c",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-06-17T03:01:36.5361081Z",
+  "finishTime": "2023-06-17T03:01:36.563336Z"
+}.
+[2023-06-17 03:01:36Z INFO JobRunner] Job result after all job steps finish: Failed
+[2023-06-17 03:01:36Z INFO JobRunner] Completing the job execution context.
+[2023-06-17 03:01:36Z INFO JobRunner] Shutting down the job server queue.
+[2023-06-17 03:01:36Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2023-06-17 03:01:37Z INFO JobServerQueue] All queue process task stopped.
+[2023-06-17 03:01:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a047640a-23da-5e9b-1ef8-917a09b3753a', success rate: 1/1.
+[2023-06-17 03:01:37Z INFO JobServerQueue] Web console line queue drained.
+[2023-06-17 03:01:37Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2023-06-17 03:01:37Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2023-06-17 03:01:37Z INFO JobServerQueue] File upload queue drained.
+[2023-06-17 03:01:37Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-06-17 03:01:37Z INFO JobServerQueue] Results upload queue drained.
+[2023-06-17 03:01:38Z INFO JobServerQueue] Timeline update queue drained.
+[2023-06-17 03:01:38Z INFO JobServerQueue] Disposing job server ...
+[2023-06-17 03:01:38Z INFO JobServerQueue] Disposing results server ...
+[2023-06-17 03:01:38Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2023-06-17 03:01:38Z INFO TempDirectoryManager] Cleaning runner temp folder: /usr/src/app/actions-runner/_work/_temp
+[2023-06-17 03:01:38Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 03:01:38Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 03:01:38Z INFO HostContext] Well known directory 'Diag': '/usr/src/app/actions-runner/_diag'
+[2023-06-17 03:01:38Z INFO HostContext] Well known config file 'Telemetry': '/usr/src/app/actions-runner/_diag/.telemetry'
+[2023-06-17 03:01:38Z INFO JobRunner] Raising job completed event
+[2023-06-17 03:01:38Z INFO Worker] Job completed.

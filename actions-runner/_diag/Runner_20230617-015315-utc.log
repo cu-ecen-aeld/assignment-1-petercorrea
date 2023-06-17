@@ -1,0 +1,188 @@
+[2023-06-17 01:53:15Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-06-17 01:53:15Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:15Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:15Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-17 01:53:16Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-06-17 01:53:16Z INFO Listener] RuntimeInformation: Linux 5.15.49-linuxkit #1 SMP PREEMPT Tue Sep 13 07:51:32 UTC 2022.
+[2023-06-17 01:53:16Z INFO Listener] Version: 2.305.0
+[2023-06-17 01:53:16Z INFO Listener] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-06-17 01:53:16Z INFO Listener] Culture: 
+[2023-06-17 01:53:16Z INFO Listener] UI Culture: 
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO Listener] Validating directory permissions for: '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO CommandLineParser] Parse
+[2023-06-17 01:53:16Z INFO CommandLineParser] Parsing 1 args
+[2023-06-17 01:53:16Z INFO CommandLineParser] parsing argument
+[2023-06-17 01:53:16Z INFO CommandLineParser] HasArgs: False
+[2023-06-17 01:53:16Z INFO CommandLineParser] Adding Command: run
+[2023-06-17 01:53:16Z INFO Listener] Arguments parsed
+[2023-06-17 01:53:16Z INFO Runner] ExecuteCommand
+[2023-06-17 01:53:16Z INFO ConfigurationStore] currentAssemblyLocation: /usr/src/app/actions-runner/bin/Runner.Listener.dll
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] binPath: /usr/src/app/actions-runner/bin
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] RootFolder: /usr/src/app/actions-runner
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] ConfigFilePath: /usr/src/app/actions-runner/.runner
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] CredFilePath: /usr/src/app/actions-runner/.credentials
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO HostContext] Well known config file 'MigratedCredentials': '/usr/src/app/actions-runner/.credentials_migrated'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] MigratedCredFilePath: /usr/src/app/actions-runner/.credentials_migrated
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO HostContext] Well known config file 'Service': '/usr/src/app/actions-runner/.service'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] ServiceConfigFilePath: /usr/src/app/actions-runner/.service
+[2023-06-17 01:53:16Z INFO CommandSettings] Flag 'help': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Flag 'version': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Flag 'check': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Command 'configure': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Command 'remove': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-06-17 01:53:16Z INFO ConfigurationManager] LoadSettings
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsConfigured()
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-17 01:53:16Z INFO ConfigurationManager] Is configured: True
+[2023-06-17 01:53:16Z INFO ConfigurationStore] Read setting file: 307 chars
+[2023-06-17 01:53:16Z INFO ConfigurationManager] Settings Loaded
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-06-17 01:53:16Z INFO CommandSettings] Command 'run': 'True'
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsConfigured()
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-17 01:53:16Z INFO ConfigurationManager] Is configured: True
+[2023-06-17 01:53:16Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-06-17 01:53:16Z INFO Runner] Set runner startup type - Manual
+[2023-06-17 01:53:16Z INFO CommandSettings] Flag 'once': 'False'
+[2023-06-17 01:53:16Z INFO CommandSettings] Flag 'once': 'False'
+[2023-06-17 01:53:16Z INFO Runner] RunAsync
+[2023-06-17 01:53:16Z INFO ConfigurationManager] LoadSettings
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsConfigured()
+[2023-06-17 01:53:16Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-17 01:53:16Z INFO ConfigurationManager] Is configured: True
+[2023-06-17 01:53:16Z INFO ConfigurationManager] Settings Loaded
+[2023-06-17 01:53:16Z INFO MessageListener] {
+  "AgentId": 24,
+  "AgentName": "5398ccb646be",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea",
+  "WorkFolder": "_work"
+}
+[2023-06-17 01:53:16Z INFO MessageListener] Loading Credentials
+[2023-06-17 01:53:16Z INFO ConfigurationStore] HasCredentials()
+[2023-06-17 01:53:16Z INFO ConfigurationStore] stored True
+[2023-06-17 01:53:16Z INFO CredentialManager] GetCredentialProvider
+[2023-06-17 01:53:16Z INFO CredentialManager] Creating type OAuth
+[2023-06-17 01:53:16Z INFO CredentialManager] Creating credential type: OAuth
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:16Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-17 01:53:16Z INFO HostContext] Well known config file 'RSACredentials': '/usr/src/app/actions-runner/.credentials_rsaparams'
+[2023-06-17 01:53:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 01:53:16Z INFO MessageListener] Attempt to create session.
+[2023-06-17 01:53:16Z INFO MessageListener] Connecting to the Runner Server...
+[2023-06-17 01:53:16Z INFO RunnerServer] EstablishVssConnection
+[2023-06-17 01:53:16Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-06-17 01:53:17Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 01:53:17Z INFO RunnerServer] EstablishVssConnection
+[2023-06-17 01:53:17Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-17 01:53:17Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 01:53:17Z INFO RunnerServer] EstablishVssConnection
+[2023-06-17 01:53:17Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-17 01:53:17Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-17 01:53:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 01:53:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 01:53:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-17 01:53:19Z INFO MessageListener] VssConnection created
+[2023-06-17 01:53:19Z INFO Terminal] WRITE LINE: 
+[2023-06-17 01:53:19Z INFO Terminal] WRITE LINE: 
+[2023-06-17 01:53:20Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 01:53:20Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 01:53:20Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-06-17 01:53:21Z INFO MessageListener] Session created.
+[2023-06-17 01:53:21Z INFO Terminal] WRITE LINE: Current runner version: '2.305.0'
+[2023-06-17 01:53:21Z INFO Terminal] WRITE LINE: 2023-06-17 01:53:21Z: Listening for Jobs
+[2023-06-17 01:53:21Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-06-17 01:53:43Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 01:53:43Z INFO MessageListener] Message '29' received from session '2b9a4f40-ac12-4faf-bd46-c64a82929eb8'.
+[2023-06-17 01:53:43Z INFO Runner] Received job message of length 23034 from service, with hash '49626ee2fdec14a5897d053fde850b0e8796644e18795ede61ef62092efa1ff5'
+[2023-06-17 01:53:44Z INFO JobDispatcher] Job request 31 for plan 915e0a4e-ce9d-4543-8358-5c80c7751e5a job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2023-06-17 01:53:44Z INFO JobDispatcher] Pull OrchestrationId 915e0a4e-ce9d-4543-8358-5c80c7751e5a.unit-test.__default from JWT claims
+[2023-06-17 01:53:44Z INFO Terminal] WRITE LINE: 2023-06-17 01:53:44Z: Running job: unit-test
+[2023-06-17 01:53:44Z INFO JobDispatcher] Start renew job request 31 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2023-06-17 01:53:44Z INFO JobDispatcher] Successfully renew job request 31, job is valid till 06/17/2023 02:03:44
+[2023-06-17 01:53:44Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   File name: '/usr/src/app/actions-runner/bin/Runner.Worker'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 109'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-06-17 01:53:44Z INFO ProcessInvokerWrapper] Process started with process id 80, waiting for process exit.
+[2023-06-17 01:53:44Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2023-06-17 01:53:44Z INFO ProcessChannel] Sending message of length 23034, with hash '49626ee2fdec14a5897d053fde850b0e8796644e18795ede61ef62092efa1ff5'
+[2023-06-17 01:53:44Z INFO JobNotification] Entering JobStarted Notification
+[2023-06-17 01:53:44Z INFO JobNotification] Entering StartMonitor
+[2023-06-17 01:53:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 01:53:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 01:53:56Z INFO ProcessInvokerWrapper] Finished process 80 with exit code 102, and elapsed time 00:00:12.0834243.
+[2023-06-17 01:53:56Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 102
+[2023-06-17 01:53:56Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Failed
+[2023-06-17 01:53:56Z INFO Terminal] WRITE LINE: 2023-06-17 01:53:56Z: Job unit-test completed with result: Failed
+[2023-06-17 01:53:56Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2023-06-17 01:53:56Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 31.
+[2023-06-17 01:53:56Z INFO JobNotification] Entering JobCompleted Notification
+[2023-06-17 01:53:56Z INFO JobNotification] Entering EndMonitor
+[2023-06-17 01:53:58Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-17 01:53:58Z INFO MessageListener] Message '30' received from session '2b9a4f40-ac12-4faf-bd46-c64a82929eb8'.
+[2023-06-17 01:53:58Z INFO Runner] Received job message of length 23036 from service, with hash '5cdef4e5c3e69547f97bf1a2639389f7ffb00c9451ccaa67805a6bd2102aa8b3'
+[2023-06-17 01:53:58Z INFO JobDispatcher] Job request 32 for plan 915e0a4e-ce9d-4543-8358-5c80c7751e5a job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2023-06-17 01:53:58Z INFO JobDispatcher] Pull OrchestrationId 915e0a4e-ce9d-4543-8358-5c80c7751e5a.full-test.__default from JWT claims
+[2023-06-17 01:53:58Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2023-06-17 01:53:58Z INFO Terminal] WRITE LINE: 2023-06-17 01:53:58Z: Running job: full-test
+[2023-06-17 01:53:58Z INFO JobDispatcher] Start renew job request 32 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-06-17 01:53:59Z INFO JobDispatcher] Successfully renew job request 32, job is valid till 06/17/2023 02:03:59
+[2023-06-17 01:53:59Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   File name: '/usr/src/app/actions-runner/bin/Runner.Worker'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 109'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner/bin'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-06-17 01:53:59Z INFO ProcessInvokerWrapper] Process started with process id 119, waiting for process exit.
+[2023-06-17 01:53:59Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-06-17 01:53:59Z INFO ProcessChannel] Sending message of length 23036, with hash '5cdef4e5c3e69547f97bf1a2639389f7ffb00c9451ccaa67805a6bd2102aa8b3'
+[2023-06-17 01:53:59Z INFO JobNotification] Entering JobStarted Notification
+[2023-06-17 01:53:59Z INFO JobNotification] Entering StartMonitor
+[2023-06-17 01:54:10Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 01:54:10Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-17 01:54:10Z INFO ProcessInvokerWrapper] Finished process 119 with exit code 102, and elapsed time 00:00:11.5700536.
+[2023-06-17 01:54:10Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2023-06-17 01:54:10Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2023-06-17 01:54:10Z INFO Terminal] WRITE LINE: 2023-06-17 01:54:10Z: Job full-test completed with result: Failed
+[2023-06-17 01:54:10Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2023-06-17 01:54:10Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 32.
+[2023-06-17 01:54:10Z INFO JobNotification] Entering JobCompleted Notification
+[2023-06-17 01:54:10Z INFO JobNotification] Entering EndMonitor

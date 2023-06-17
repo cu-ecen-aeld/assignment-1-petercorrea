@@ -1,0 +1,222 @@
+[2023-06-16 20:17:14Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-06-16 20:17:14Z WARN HostContext] Runner is running under insecure mode: HTTPS server certifcate validation has been turned off by GITHUB_ACTIONS_RUNNER_TLS_NO_VERIFY environment variable.
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-16 20:17:14Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-06-16 20:17:14Z INFO Listener] RuntimeInformation: Linux 5.15.49-linuxkit #1 SMP PREEMPT Tue Sep 13 07:51:32 UTC 2022.
+[2023-06-16 20:17:14Z INFO Listener] Version: 2.305.0
+[2023-06-16 20:17:14Z INFO Listener] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-06-16 20:17:14Z INFO Listener] Culture: 
+[2023-06-16 20:17:14Z INFO Listener] UI Culture: 
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO Listener] Validating directory permissions for: '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO CommandLineParser] Parse
+[2023-06-16 20:17:14Z INFO CommandLineParser] Parsing 5 args
+[2023-06-16 20:17:14Z INFO CommandLineParser] parsing argument
+[2023-06-16 20:17:14Z INFO CommandLineParser] HasArgs: False
+[2023-06-16 20:17:14Z INFO CommandLineParser] Adding Command: configure
+[2023-06-16 20:17:14Z INFO CommandLineParser] parsing argument
+[2023-06-16 20:17:14Z INFO CommandLineParser] HasArgs: True
+[2023-06-16 20:17:14Z INFO CommandLineParser] arg: url
+[2023-06-16 20:17:14Z INFO CommandLineParser] parsing argument
+[2023-06-16 20:17:14Z INFO CommandLineParser] HasArgs: True
+[2023-06-16 20:17:14Z INFO CommandLineParser] Adding option 'url': 'https://github.com/cu-ecen-aeld/assignment-1-petercorrea'
+[2023-06-16 20:17:14Z INFO CommandLineParser] parsing argument
+[2023-06-16 20:17:14Z INFO CommandLineParser] HasArgs: True
+[2023-06-16 20:17:14Z INFO CommandLineParser] arg: token
+[2023-06-16 20:17:14Z INFO CommandLineParser] parsing argument
+[2023-06-16 20:17:14Z INFO CommandLineParser] HasArgs: True
+[2023-06-16 20:17:14Z INFO CommandLineParser] Adding option 'token': '***'
+[2023-06-16 20:17:14Z INFO Listener] Arguments parsed
+[2023-06-16 20:17:14Z INFO Runner] ExecuteCommand
+[2023-06-16 20:17:14Z INFO ConfigurationStore] currentAssemblyLocation: /usr/src/app/actions-runner/bin/Runner.Listener.dll
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] binPath: /usr/src/app/actions-runner/bin
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] RootFolder: /usr/src/app/actions-runner
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] ConfigFilePath: /usr/src/app/actions-runner/.runner
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] CredFilePath: /usr/src/app/actions-runner/.credentials
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO HostContext] Well known config file 'MigratedCredentials': '/usr/src/app/actions-runner/.credentials_migrated'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] MigratedCredFilePath: /usr/src/app/actions-runner/.credentials_migrated
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:14Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:14Z INFO HostContext] Well known config file 'Service': '/usr/src/app/actions-runner/.service'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] ServiceConfigFilePath: /usr/src/app/actions-runner/.service
+[2023-06-16 20:17:14Z INFO CommandSettings] Flag 'help': 'False'
+[2023-06-16 20:17:14Z INFO CommandSettings] Flag 'version': 'False'
+[2023-06-16 20:17:14Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-06-16 20:17:14Z INFO CommandSettings] Flag 'check': 'False'
+[2023-06-16 20:17:14Z INFO CommandSettings] Command 'configure': 'True'
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE: |                       
+[2023-06-16 20:17:14Z INFO Terminal] WRITE: Self-hosted runner registration
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE:                         |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-06-16 20:17:14Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-06-16 20:17:14Z INFO ConfigurationManager] ConfigureAsync
+[2023-06-16 20:17:14Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2023-06-16 20:17:14Z INFO ConfigurationStore] IsConfigured()
+[2023-06-16 20:17:15Z INFO ConfigurationStore] IsConfigured: False
+[2023-06-16 20:17:15Z INFO ConfigurationManager] Is configured: False
+[2023-06-16 20:17:15Z INFO CommandSettings] Arg 'url': 'https://github.com/cu-ecen-aeld/assignment-1-petercorrea'
+[2023-06-16 20:17:15Z INFO CommandSettings] Remove url from Arg dictionary.
+[2023-06-16 20:17:15Z INFO CommandSettings] Arg 'token': '***'
+[2023-06-16 20:17:15Z INFO CommandSettings] Remove token from Arg dictionary.
+[2023-06-16 20:17:16Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (E861:36FA:229E793:467CA86:648CC34B)
+[2023-06-16 20:17:16Z INFO ConfigurationManager] Using V2 flow: False
+[2023-06-16 20:17:16Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2023-06-16 20:17:16Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:17:16Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-06-16 20:17:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:17:17Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:17:17Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:17:17Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:17:17Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:17:17Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:17:17Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:17:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:17:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:17:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:17:18Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:18Z INFO ConfigurationManager] Test Connection complete.
+[2023-06-16 20:17:18Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:18Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:18Z INFO HostContext] Well known config file 'RSACredentials': '/usr/src/app/actions-runner/.credentials_rsaparams'
+[2023-06-16 20:17:18Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2023-06-16 20:17:18Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:17:18Z INFO RSAFileKeyManager] Which: 'chmod'
+[2023-06-16 20:17:18Z INFO RSAFileKeyManager] Location: '/usr/bin/chmod'
+[2023-06-16 20:17:18Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:18Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Arguments: '600 /usr/src/app/actions-runner/.credentials_rsaparams'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 1577.
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper] Process started with process id 1577, waiting for process exit.
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-16 20:17:18Z INFO ProcessInvokerWrapper] Finished process 1577 with exit code 0, and elapsed time 00:00:00.0516378.
+[2023-06-16 20:17:18Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:17:19Z INFO CommandSettings] Arg 'runnergroup': ''
+[2023-06-16 20:17:19Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-06-16 20:17:19Z INFO PromptManager] ReadValue
+[2023-06-16 20:17:19Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2023-06-16 20:17:19Z INFO Terminal] WRITE: [press Enter for Default] 
+[2023-06-16 20:17:19Z INFO Terminal] READ LINE
+[2023-06-16 20:17:42Z INFO Terminal] Read value: ''
+[2023-06-16 20:17:42Z INFO PromptManager] Falling back to the default: 'Default'
+[2023-06-16 20:17:42Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:42Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2023-06-16 20:17:42Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-06-16 20:17:42Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-06-16 20:17:42Z INFO CommandSettings] Arg 'name': ''
+[2023-06-16 20:17:42Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-06-16 20:17:42Z INFO PromptManager] ReadValue
+[2023-06-16 20:17:42Z INFO Terminal] WRITE: Enter the name of runner: 
+[2023-06-16 20:17:42Z INFO Terminal] WRITE: [press Enter for 5398ccb646be] 
+[2023-06-16 20:17:42Z INFO Terminal] READ LINE
+[2023-06-16 20:17:44Z INFO Terminal] Read value: ''
+[2023-06-16 20:17:44Z INFO PromptManager] Falling back to the default: '5398ccb646be'
+[2023-06-16 20:17:44Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:44Z INFO CommandSettings] Arg 'labels': ''
+[2023-06-16 20:17:44Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-06-16 20:17:44Z INFO PromptManager] ReadValue
+[2023-06-16 20:17:44Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2023-06-16 20:17:44Z INFO Terminal] WRITE: [press Enter to skip] 
+[2023-06-16 20:17:44Z INFO Terminal] READ LINE
+[2023-06-16 20:17:46Z INFO Terminal] Read value: ''
+[2023-06-16 20:17:46Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:46Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-06-16 20:17:46Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2023-06-16 20:17:47Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-06-16 20:17:47Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-06-16 20:17:47Z INFO ConfigurationStore] Saving OAuth credential @ /usr/src/app/actions-runner/.credentials
+[2023-06-16 20:17:47Z INFO ConfigurationStore] Credentials Saved.
+[2023-06-16 20:17:47Z INFO ConfigurationStore] HasCredentials()
+[2023-06-16 20:17:47Z INFO ConfigurationStore] stored True
+[2023-06-16 20:17:47Z INFO CredentialManager] GetCredentialProvider
+[2023-06-16 20:17:47Z INFO CredentialManager] Creating type OAuth
+[2023-06-16 20:17:47Z INFO CredentialManager] Creating credential type: OAuth
+[2023-06-16 20:17:47Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:17:47Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:17:47Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-06-16 20:17:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:17:47Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:17:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:17:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:17:47Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:17:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:17:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:17:47Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:17:47Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:17:47Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:17:47Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:17:47Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:17:48Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-06-16 20:17:48Z INFO CommandSettings] Arg 'work': ''
+[2023-06-16 20:17:48Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-06-16 20:17:48Z INFO PromptManager] ReadValue
+[2023-06-16 20:17:48Z INFO Terminal] WRITE: Enter name of work folder: 
+[2023-06-16 20:17:48Z INFO Terminal] WRITE: [press Enter for _work] 
+[2023-06-16 20:17:48Z INFO Terminal] READ LINE
+[2023-06-16 20:17:53Z INFO Terminal] Read value: ''
+[2023-06-16 20:17:53Z INFO PromptManager] Falling back to the default: '_work'
+[2023-06-16 20:17:53Z INFO ConfigurationStore] Saving runner settings.
+[2023-06-16 20:17:53Z INFO ConfigurationStore] Settings Saved.
+[2023-06-16 20:17:53Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:53Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:17:53Z INFO SystemDControlManager] Service name 'actions.runner.cu-ecen-aeld-assignment-1-petercorrea.5398ccb646be.service' display name 'GitHub Actions Runner (cu-ecen-aeld-assignment-1-petercorrea.5398ccb646be)' will be used for service configuration.
+[2023-06-16 20:17:53Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:53Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:53Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:53Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:17:53Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:17:53Z INFO UnixUtil] Which: 'chmod'
+[2023-06-16 20:17:53Z INFO UnixUtil] Location: '/usr/bin/chmod'
+[2023-06-16 20:17:53Z INFO UnixUtil] Running /usr/bin/chmod 755 "/usr/src/app/actions-runner/svc.sh"
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper] Starting process:
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Arguments: '755 "/usr/src/app/actions-runner/svc.sh"'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Working directory: '/usr/src/app/actions-runner'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper] Process started with process id 1582, waiting for process exit.
+[2023-06-16 20:17:53Z INFO ProcessInvokerWrapper] Finished process 1582 with exit code 0, and elapsed time 00:00:00.0857324.
+[2023-06-16 20:17:53Z INFO Listener] Runner execution has finished with return code 0

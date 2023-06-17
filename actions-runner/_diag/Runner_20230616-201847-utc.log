@@ -1,0 +1,148 @@
+[2023-06-16 20:18:47Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-06-16 20:18:47Z WARN HostContext] Runner is running under insecure mode: HTTPS server certifcate validation has been turned off by GITHUB_ACTIONS_RUNNER_TLS_NO_VERIFY environment variable.
+[2023-06-16 20:18:47Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:47Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:47Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-16 20:18:47Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:47Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:47Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-16 20:18:47Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2023-06-16 20:18:47Z INFO Listener] RuntimeInformation: Linux 5.15.49-linuxkit #1 SMP PREEMPT Tue Sep 13 07:51:32 UTC 2022.
+[2023-06-16 20:18:48Z INFO Listener] Version: 2.305.0
+[2023-06-16 20:18:48Z INFO Listener] Commit: 6cbe663c239dba8a109c6ac2801b25f1ed7c51e9
+[2023-06-16 20:18:48Z INFO Listener] Culture: 
+[2023-06-16 20:18:48Z INFO Listener] UI Culture: 
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO Listener] Validating directory permissions for: '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO CommandLineParser] Parse
+[2023-06-16 20:18:48Z INFO CommandLineParser] Parsing 1 args
+[2023-06-16 20:18:48Z INFO CommandLineParser] parsing argument
+[2023-06-16 20:18:48Z INFO CommandLineParser] HasArgs: False
+[2023-06-16 20:18:48Z INFO CommandLineParser] Adding Command: run
+[2023-06-16 20:18:48Z INFO Listener] Arguments parsed
+[2023-06-16 20:18:48Z INFO Runner] ExecuteCommand
+[2023-06-16 20:18:48Z INFO ConfigurationStore] currentAssemblyLocation: /usr/src/app/actions-runner/bin/Runner.Listener.dll
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] binPath: /usr/src/app/actions-runner/bin
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] RootFolder: /usr/src/app/actions-runner
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO HostContext] Well known config file 'Runner': '/usr/src/app/actions-runner/.runner'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] ConfigFilePath: /usr/src/app/actions-runner/.runner
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO HostContext] Well known config file 'Credentials': '/usr/src/app/actions-runner/.credentials'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] CredFilePath: /usr/src/app/actions-runner/.credentials
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO HostContext] Well known config file 'MigratedCredentials': '/usr/src/app/actions-runner/.credentials_migrated'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] MigratedCredFilePath: /usr/src/app/actions-runner/.credentials_migrated
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO HostContext] Well known config file 'Service': '/usr/src/app/actions-runner/.service'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] ServiceConfigFilePath: /usr/src/app/actions-runner/.service
+[2023-06-16 20:18:48Z INFO CommandSettings] Flag 'help': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Flag 'version': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Flag 'check': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Command 'configure': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Command 'remove': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-06-16 20:18:48Z INFO ConfigurationManager] LoadSettings
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsConfigured()
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-16 20:18:48Z INFO ConfigurationManager] Is configured: True
+[2023-06-16 20:18:48Z INFO ConfigurationStore] Read setting file: 307 chars
+[2023-06-16 20:18:48Z INFO ConfigurationManager] Settings Loaded
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-06-16 20:18:48Z INFO CommandSettings] Command 'run': 'True'
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsConfigured()
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-16 20:18:48Z INFO ConfigurationManager] Is configured: True
+[2023-06-16 20:18:48Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-06-16 20:18:48Z INFO Runner] Set runner startup type - Manual
+[2023-06-16 20:18:48Z INFO CommandSettings] Flag 'once': 'False'
+[2023-06-16 20:18:48Z INFO CommandSettings] Flag 'once': 'False'
+[2023-06-16 20:18:48Z INFO Runner] RunAsync
+[2023-06-16 20:18:48Z INFO ConfigurationManager] LoadSettings
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsConfigured()
+[2023-06-16 20:18:48Z INFO ConfigurationStore] IsConfigured: True
+[2023-06-16 20:18:48Z INFO ConfigurationManager] Is configured: True
+[2023-06-16 20:18:48Z INFO ConfigurationManager] Settings Loaded
+[2023-06-16 20:18:48Z INFO MessageListener] {
+  "AgentId": 24,
+  "AgentName": "5398ccb646be",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/6n9YdM5l1jhJ5fTwqLVRjaC2kWZ9SuphynErDEtFofg9Ku2iet",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-1-petercorrea",
+  "WorkFolder": "_work"
+}
+[2023-06-16 20:18:48Z INFO MessageListener] Loading Credentials
+[2023-06-16 20:18:48Z INFO ConfigurationStore] HasCredentials()
+[2023-06-16 20:18:48Z INFO ConfigurationStore] stored True
+[2023-06-16 20:18:48Z INFO CredentialManager] GetCredentialProvider
+[2023-06-16 20:18:48Z INFO CredentialManager] Creating type OAuth
+[2023-06-16 20:18:48Z INFO CredentialManager] Creating credential type: OAuth
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Bin': '/usr/src/app/actions-runner/bin'
+[2023-06-16 20:18:48Z INFO HostContext] Well known directory 'Root': '/usr/src/app/actions-runner'
+[2023-06-16 20:18:48Z INFO HostContext] Well known config file 'RSACredentials': '/usr/src/app/actions-runner/.credentials_rsaparams'
+[2023-06-16 20:18:48Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:18:48Z INFO MessageListener] Attempt to create session.
+[2023-06-16 20:18:48Z INFO MessageListener] Connecting to the Runner Server...
+[2023-06-16 20:18:48Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:18:48Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-06-16 20:18:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:18:49Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:18:49Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:18:49Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:18:49Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:18:49Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:18:49Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:18:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:18:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:18:50Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:18:50Z INFO MessageListener] VssConnection created
+[2023-06-16 20:18:50Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:18:50Z INFO Terminal] WRITE LINE: 
+[2023-06-16 20:18:50Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:18:51Z INFO RSAFileKeyManager] Loading RSA key parameters from file /usr/src/app/actions-runner/.credentials_rsaparams
+[2023-06-16 20:18:51Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-06-16 20:18:51Z INFO MessageListener] Session created.
+[2023-06-16 20:18:51Z INFO Terminal] WRITE LINE: Current runner version: '2.305.0'
+[2023-06-16 20:18:51Z INFO Terminal] WRITE LINE: 2023-06-16 20:18:51Z: Listening for Jobs
+[2023-06-16 20:18:51Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-06-16 20:45:11Z ERR  MessageListener] Catch exception during get next message.
+[2023-06-16 20:45:11Z ERR  MessageListener] System.Security.Cryptography.CryptographicException: RSA key file /usr/src/app/actions-runner/.credentials_rsaparams was not found
+   at GitHub.Runner.Listener.Configuration.RSAFileKeyManager.GetKey()
+   at GitHub.Runner.Listener.MessageListener.GetMessageDecryptor(Aes aes, TaskAgentMessage message)
+   at GitHub.Runner.Listener.MessageListener.DecryptMessage(TaskAgentMessage message)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2023-06-16 20:45:11Z INFO MessageListener] Retriable exception: RSA key file /usr/src/app/actions-runner/.credentials_rsaparams was not found
+[2023-06-16 20:45:11Z ERR  Terminal] WRITE ERROR: 2023-06-16 20:45:11Z: Runner connect error: RSA key file /usr/src/app/actions-runner/.credentials_rsaparams was not found. Retrying until reconnected.
+[2023-06-16 20:45:11Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2023-06-16 20:45:11Z INFO RunnerServer] EstablishVssConnection
+[2023-06-16 20:45:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-06-16 20:45:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-06-16 20:45:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-06-16 20:45:12Z INFO MessageListener] Sleeping for 25.893 seconds before retrying.
+[2023-06-16 20:45:38Z INFO MessageListener] Message '1' received from session '4bc1b47e-22a5-402e-9080-8929e913698b'.
+[2023-06-16 20:45:38Z INFO Runner] Received job message of length 30720 from service, with hash 'f66d6f62d89b5a4acb9ea0e00ff35005315f87927d8bf4afd5c680dce5568aa1'
+[2023-06-16 20:45:40Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2023-06-16 20:45:40Z ERR  Terminal] WRITE ERROR: An error occurred: Unexpected character encountered while parsing value: m. Path '', line 0, position 0.
+[2023-06-16 20:45:40Z ERR  Listener] Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: m. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at GitHub.Runner.Listener.Runner.RunAsync(RunnerSettings settings, Boolean runOnce)
+   at GitHub.Runner.Listener.Runner.RunAsync(RunnerSettings settings, Boolean runOnce)
+   at GitHub.Runner.Listener.Runner.RunAsync(RunnerSettings settings, Boolean runOnce)
+   at GitHub.Runner.Listener.Runner.ExecuteCommand(CommandSettings command)
+   at GitHub.Runner.Listener.Program.MainAsync(IHostContext context, String[] args)

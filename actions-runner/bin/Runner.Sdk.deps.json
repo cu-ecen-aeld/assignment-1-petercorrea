@@ -1,13 +1,13 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0/osx-x64",
+    "name": ".NETCoreApp,Version=v6.0/linux-x64",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {},
-    ".NETCoreApp,Version=v6.0/osx-x64": {
-      "Runner.Sdk/2.304.0": {
+    ".NETCoreApp,Version=v6.0/linux-x64": {
+      "Runner.Sdk/2.305.0": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.4.0",
           "Sdk": "1.0.0",
@@ -1109,7 +1109,7 @@
     }
   },
   "libraries": {
-    "Runner.Sdk/2.304.0": {
+    "Runner.Sdk/2.305.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,13 +1,13 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0/osx-x64",
+    "name": ".NETCoreApp,Version=v6.0/linux-x64",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {},
-    ".NETCoreApp,Version=v6.0/osx-x64": {
-      "Sdk/2.304.0": {
+    ".NETCoreApp,Version=v6.0/linux-x64": {
+      "Sdk/2.305.0": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.4",
           "Microsoft.Win32.Registry": "4.4.0",
@@ -1092,7 +1092,7 @@
     }
   },
   "libraries": {
-    "Sdk/2.304.0": {
+    "Sdk/2.305.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

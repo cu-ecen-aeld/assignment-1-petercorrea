@@ -1,10 +1,12 @@
-version: '3.1'
+version: '3.8'
 
 services:
   devbox:
-    image: ubuntu:20.04
+    platform: linux/amd64
+    # image: ubuntu:20.04
     build: .
     volumes:
       - .:/usr/src/app
+      - /var/run/docker.sock:/var/run/docker.sock
     tty: true
     command: /bin/bash
